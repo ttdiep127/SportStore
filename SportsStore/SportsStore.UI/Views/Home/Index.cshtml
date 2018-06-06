@@ -1,0 +1,85 @@
+﻿@model SportsStore.UI.Models.HomeIndexViewModel
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="row col-sm-12">
+    <div class="col-sm-12">
+        @{Html.RenderAction("CarouslePartial", "Home");}
+    </div>
+    <div class="col-sm-12 text-center">
+        <h1>Hot Product</h1>
+    </div>
+    @foreach (var item in Model.Products)
+    {
+        <div class="col-xs-12 col-sm-3">
+            <article class="acticle-product">
+                <a href="#" class="product">
+                    <div class="article-content">
+                        <div class="size-img-product">
+                            <img src="@item.ProductImage" alt="@item.ProductName" class="size-img-product" />
+                        </div>
+                        <h3>@item.ProductName</h3>
+                        <div class="price">
+                            <strong>@item.Price</strong>
+                        </div>
+                    </div>
+                </a>
+                <div class="toolbar">
+                    <a href="#">
+                        <i class="glyphicon glyphicon-search"></i>
+                    </a>
+                    <form action="@Url.Action("AddToCart","Cart")"
+                          method="post">
+                        <input name="ProductId"
+                               type="hidden"
+                               value="@item.ProductID" />
+                        <input name="Quantity"
+                               type="hidden"
+                               value="1" />
+                        <button type="submit">
+                            <i class="glyphicon glyphicon-shopping-cart"></i>
+                        </button>
+                    </form>
+                </div>
+            </article>
+        </div>
+    }
+</div>
+
+<div class="pagination-site">
+    <ul class="pagination ">
+        @if (Model.PagingInfo.CurrentPage != 1)
+        {
+            <li>
+                <a href="@Url.Action("Index","Home",new { categoryId = Model.CurrentCategoryId, page = Model.PagingInfo.CurrentPage-1})">
+                    Back
+                </a>
+            </li>
+        }
+
+        @for (int i = 1; i <= Model.PagingInfo.TotalPages; i++)
+        {
+            <li class="@(i == Model.PagingInfo.CurrentPage ? "active":"")">
+                <a href="@Url.Action("Index","Home", new {categoryId = Model.CurrentCategoryId, page =i})">
+                    @i
+                </a>
+            </li>
+        }
+
+        @if (Model.PagingInfo.CurrentPage != Model.PagingInfo.TotalPages)
+        {
+            <li>
+                <a href="@Url.Action("Index","Home",new { categoryId = Model.CurrentCategoryId, page = Model.PagingInfo.CurrentPage+1})">
+                    Back
+                </a>
+            </li>
+        }
+    </ul>
+</div>
+
+<div class="row">
+    <div class="col-sm-12">
+        @Html.PageLinks(Model.PagingInfo, i => Url.Action("Index", "Home", new { categoryId = Model.CurrentCategoryId, page = i }))
+    </div>
+</div>

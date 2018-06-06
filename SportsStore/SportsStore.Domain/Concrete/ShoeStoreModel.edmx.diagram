@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="6d0c339715124fe892310113de481aba" Name="Diagram1">
+        <EntityTypeShape EntityType="ShoeStoreModel.Category" Width="1.5" PointX="0.75" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShoeStoreModel.Gender" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShoeStoreModel.ProductItem" Width="1.5" PointX="4.125" PointY="0.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShoeStoreModel.Product" Width="1.5" PointX="3.875" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShoeStoreModel.Status" Width="1.5" PointX="3.75" PointY="7.875" IsExpanded="true" />
+        <AssociationConnector Association="ShoeStoreModel.FK_Products_Categories" ManuallyRouted="false" />
+        <AssociationConnector Association="ShoeStoreModel.FK_Products_Genders1" ManuallyRouted="false" />
+        <AssociationConnector Association="ShoeStoreModel.FK_ProductItems_Products" ManuallyRouted="false" />
+        <AssociationConnector Association="ShoeStoreModel.FK_Products_Statuses" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="ShoeStoreModel.Wallpaper" Width="1.5" PointX="9.625" PointY="0.5" />
+        <EntityTypeShape EntityType="ShoeStoreModel.Customer" Width="1.5" PointX="9.5" PointY="6.875" />
+        <EntityTypeShape EntityType="ShoeStoreModel.OrderDetail" Width="1.5" PointX="6.75" PointY="3.875" />
+        <EntityTypeShape EntityType="ShoeStoreModel.Order" Width="1.5" PointX="6.75" PointY="7.375" />
+        <AssociationConnector Association="ShoeStoreModel.FK_Orders_Customers" />
+        <AssociationConnector Association="ShoeStoreModel.FK_OrderDetail_Orders" />
+        <AssociationConnector Association="ShoeStoreModel.FK_OrderDetail_Products" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

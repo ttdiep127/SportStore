@@ -1,0 +1,37 @@
+﻿@model IEnumerable<SportsStore.Domain.Concrete.Product>
+
+<div class="col-xs-12 col-sm-9">
+    <div class="page-header">
+        <h3>Danh sách sản phẩm</h3>
+    </div>
+    <div class="row">
+        @{Html.RenderAction("SideMenuPartial", "Home");}
+        @foreach (var item in Model)
+        {
+            <div class="col-xs-12 col-sm-3">
+                <article class="acticle-product">
+                    <a href="#" class="product">
+                        <div class="article-content">
+                            <div class="size-img-product">
+                                <img src="@item.ProductImage" alt="@item.ProductName" class="size-img-product" />
+                            </div>
+                            <h3>@item.ProductName</h3>
+                            <div class="price">
+                                <strong>@item.Price</strong>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="toolbar">
+                        <a href="#">
+                            <i class="glyphicon glyphicon-search"></i>
+                        </a>
+                        <a href="#">
+                            <i class="glyphicon glyphicon-shopping-cart"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        }
+    </div>
+</div>
+
