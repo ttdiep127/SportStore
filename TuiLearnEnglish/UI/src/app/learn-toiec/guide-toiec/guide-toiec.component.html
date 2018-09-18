@@ -1,0 +1,43 @@
+<div class="row">
+  <nav class="navbar col-sm-2">
+    <ul>
+      <li class="list-item" (click)="content1 = true" (click)="OnClickListItem($event)">Tìm hiểu về Toiec</li>
+      <li class="list-item" (click)="content2 = true" (onclick)="OnClickListItem($event)">Cấu trúc bài thi toiec</li>
+    </ul>
+  </nav>
+  <div class="col-sm-7 ml-2">
+    <div class="mb-3">
+      <div class="title-post mb-1" (click)="content1 = !content1">
+        <i class="fas fa-chevron-right mr-2" *ngIf="!(content1)"></i>
+        <i class="fas fa-chevron-down mr-1" *ngIf="(content1)"></i>
+        <a>Tìm hiểu về Toiec</a></div>
+      <div class="content-post" *ngIf="content1">TOEIC là kỳ thi tiếng Anh trong giao tiếp quốc tế, được tiến hành trong
+        2 giờ, gồm 200 câu hỏi chia thành hai
+        phần
+        như sau:<br>
+        Phần nghe hiểu:( bao gồm 100 câu) Đánh giá trình độ nghe hiểu ngôn ngữ nói tiếng Anh, bao gồm 100 câu hỏi với 4
+        phần được thực hiện qua băng casset hoặc đĩa CD trong thời gian 45 phút.<br>
+        Phần đọc hiểu:( bao gồm 100 câu) Đánh giá trình độ hiểu ngôn ngữ viết tiếng Anh, bao gồm 100 câu hỏi với 3 phần
+        được thực hiện trong thời gian 75 phút. Thí sinh sẽ đọc các thông tin trong đề thi và lựa chọn câu trả lời dựa
+        vào
+        nội dung đã đọc.
+      </div>
+    </div>
+    <div>
+      <div class="title-post mb-2" (click)="content2 = !content2">
+        <i class="fas fa-chevron-right mr-2" *ngIf="!(content2)"></i>
+        <i class="fas fa-chevron-down mr-1" *ngIf="(content2)"></i>
+        <a>Cấu trúc bài thi Toiec</a>
+      </div>
+      <div class="content-post" *ngIf="content2">Phần nghe hiểu:( bao gồm 100 câu) Đánh giá trình độ nghe hiểu ngôn ngữ
+        nói tiếng Anh, bao gồm 100 câu hỏi với 4
+        phần được thực hiện qua băng casset hoặc đĩa CD trong thời gian 45 phút.<br>
+        Phần đọc hiểu:( bao gồm 100 câu) Đánh giá trình độ hiểu ngôn ngữ viết tiếng Anh, bao gồm 100 câu hỏi với 3 phần
+        được thực hiện trong thời gian 75 phút. Thí sinh sẽ đọc các thông tin trong đề thi và lựa chọn câu trả lời dựa
+        vào
+        nội dung đã đọc.
+      </div>
+    </div>
+  </div>
+</div>
+

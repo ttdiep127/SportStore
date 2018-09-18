@@ -1,0 +1,26 @@
+<div class="m-2">
+  <div class="row m-2">
+    <button type="button" class="col-sm btn btn-outline-primary m-1" (click)="selectedPart=1">Part 1</button>
+    <button type="button" class="col-sm btn btn-outline-primary m-1" (click)="selectedPart=2">Part 2</button>
+    <button type="button" class="col-sm btn btn-outline-primary m-1" (click)="selectedPart=3">Part 3</button>
+    <button type="button" class="col-sm btn btn-outline-primary m-1" (click)="selectedPart=4">Part 4</button>
+    <button type="button" class="col-sm btn btn-outline-primary m-1" (click)="selectedPart=5">Part 5</button>
+    <button type="button" class="col-sm btn btn-outline-primary m-1" (click)="selectedPart=6">Part 6</button>
+    <button type="button" class="col-sm btn btn-outline-primary m-1" (click)="selectedPart=7">Part 7</button>
+    <button type="button" class="col-sm btn btn-outline-primary m-1" (click)="selectedPart=0">Guide</button>
+  </div>
+  <div [ngSwitch]="selectedPart">
+    <app-guide-toiec *ngSwitchDefault></app-guide-toiec>
+    <app-part1 *ngSwitchCase="1"></app-part1>
+    <app-part2 *ngSwitchCase="2"></app-part2>
+    <app-part3 *ngSwitchCase="3"></app-part3>
+    <app-part4 *ngSwitchCase="4"></app-part4>
+    <app-part5 *ngSwitchCase="5"></app-part5>
+    <app-part6 *ngSwitchCase="6"></app-part6>
+    <app-part7 *ngSwitchCase="7"></app-part7>
+  </div>
+</div>
+
+
+
+

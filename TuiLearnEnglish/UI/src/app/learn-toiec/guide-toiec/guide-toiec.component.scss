@@ -1,0 +1,32 @@
+.navbar {
+  align-items: normal;
+}
+
+.navbar > ul {
+  list-style: none;
+}
+
+.list-item {
+  font-size: 1.1em;
+  cursor: pointer;
+  color: #2d92ff;
+}
+
+.list-item:hover {
+  color: gainsboro;
+}
+
+.list-item:target {
+  color: red;
+}
+
+.title-post {
+  display: table;
+  color: crimson;
+}
+.title-post > a {
+  font-size: 1.2em;
+  margin-left: 0.3rem;
+}
+
+

@@ -1,0 +1,12 @@
+C:\Users\Tieu Thu Tran\source\repos\TuiLearnEnglish\TLE.Web.API\bin\Debug\netcoreapp2.0\TLE.Web.API.deps.json
+C:\Users\Tieu Thu Tran\source\repos\TuiLearnEnglish\TLE.Web.API\bin\Debug\netcoreapp2.0\TLE.Web.API.runtimeconfig.json
+C:\Users\Tieu Thu Tran\source\repos\TuiLearnEnglish\TLE.Web.API\bin\Debug\netcoreapp2.0\TLE.Web.API.runtimeconfig.dev.json
+C:\Users\Tieu Thu Tran\source\repos\TuiLearnEnglish\TLE.Web.API\bin\Debug\netcoreapp2.0\TLE.Web.API.dll
+C:\Users\Tieu Thu Tran\source\repos\TuiLearnEnglish\TLE.Web.API\bin\Debug\netcoreapp2.0\TLE.Web.API.pdb
+C:\Users\Tieu Thu Tran\source\repos\TuiLearnEnglish\TLE.Web.API\obj\Debug\netcoreapp2.0\TLE.Web.API.csprojAssemblyReference.cache
+C:\Users\Tieu Thu Tran\source\repos\TuiLearnEnglish\TLE.Web.API\obj\Debug\netcoreapp2.0\TLE.Web.API.csproj.CoreCompileInputs.cache
+C:\Users\Tieu Thu Tran\source\repos\TuiLearnEnglish\TLE.Web.API\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Users\Tieu Thu Tran\source\repos\TuiLearnEnglish\TLE.Web.API\obj\Debug\netcoreapp2.0\TLE.Web.API.AssemblyInfoInputs.cache
+C:\Users\Tieu Thu Tran\source\repos\TuiLearnEnglish\TLE.Web.API\obj\Debug\netcoreapp2.0\TLE.Web.API.AssemblyInfo.cs
+C:\Users\Tieu Thu Tran\source\repos\TuiLearnEnglish\TLE.Web.API\obj\Debug\netcoreapp2.0\TLE.Web.API.dll
+C:\Users\Tieu Thu Tran\source\repos\TuiLearnEnglish\TLE.Web.API\obj\Debug\netcoreapp2.0\TLE.Web.API.pdb

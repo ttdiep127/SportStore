@@ -1,0 +1,6 @@
+C:\Users\Tieu Thu Tran\source\repos\TuiLearnEnglish\TLE.Entities\bin\Debug\TLE.Entities.dll
+C:\Users\Tieu Thu Tran\source\repos\TuiLearnEnglish\TLE.Entities\bin\Debug\TLE.Entities.pdb
+C:\Users\Tieu Thu Tran\source\repos\TuiLearnEnglish\TLE.Entities\obj\Debug\TLE.Entities.csprojAssemblyReference.cache
+C:\Users\Tieu Thu Tran\source\repos\TuiLearnEnglish\TLE.Entities\obj\Debug\TLE.Entities.csproj.CoreCompileInputs.cache
+C:\Users\Tieu Thu Tran\source\repos\TuiLearnEnglish\TLE.Entities\obj\Debug\TLE.Entities.dll
+C:\Users\Tieu Thu Tran\source\repos\TuiLearnEnglish\TLE.Entities\obj\Debug\TLE.Entities.pdb

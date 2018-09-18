@@ -1,0 +1,46 @@
+
+.nav-item {
+  font-size: 17px;
+  padding-left: 15px;
+}
+
+.list-item {
+  list-style: none;
+}
+
+.list-group {
+  margin-top: -10px;
+  position: absolute;
+  top: 100%;
+  opacity: 0;
+  background-color: #212529ad;
+  z-index: 1;
+}
+.nav-link {
+  color: rgb(50, 163, 253)!important;
+}
+::ng-deep .nav-item .nav-link:hover {
+  color: crimson!important;
+}
+::ng-deep .list-item .nav-link:hover {
+  color: white!important;
+}
+
+.child-item {
+  padding-right: 10px;
+}
+
+.user-info{
+  font-weight: 400;
+  font-size: 17px;
+}
+
+.user-info > a:hover {
+  text-decoration: none;
+}
+
+@media (min-width: 992px) {
+  .nav-item:hover .list-group{
+    opacity: 1;
+  }
+}
